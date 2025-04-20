@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkexb_client=self.webpackChunkexb_client||[]).push([["your-extensions_widgets_share-code-chunk_common_my-module_ts"],{5096:(e,n,s)=>{function c(){return"In f1. In f."}s.r(n),s.d(n,{f1:()=>c})}}]);

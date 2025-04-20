@@ -1,0 +1,20 @@
+export default {
+  _widgetLabel: 'Search Plus',
+  desc: "Search in multiple fields and in multiple layers. Use commas to separate values. ",
+  doSearch: "Search",
+  clearSearch: "Clear",
+  showPopup: "Show Popup",
+  paste: "Paste",
+  searchResults: "Search Results",
+  showResult: 'Show search results for {searchText}',
+  hideResult: 'Hide search results for {searchText}',
+  allSearchSources: 'All search sources',
+  noResult: 'No results found for "{searchText}"',
+  couldNotRetrieve: 'Could not retrieve current location.',
+  showMoreResult: 'Show more results',
+  clearAllHistories: 'Clear all histories',
+  clearHistorie: 'Clear history',
+  clearThisHistories: 'Remove this history',
+  clearRecentSearches: 'Recent searches',
+  searchIn: 'Search in {value}'
+}

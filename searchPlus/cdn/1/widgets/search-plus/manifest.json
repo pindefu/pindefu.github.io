@@ -1,0 +1,29 @@
+{
+  "name": "search-plus",
+  "label": "Search Plus",
+  "type": "widget",
+  "version": "1.14.0",
+  "exbVersion": "1.14.0",
+  "author": "Esri Professional Services",
+  "description": "Search in multiple fields of multiple layers",
+  "copyright": "",
+  "dependency": "jimu-arcgis",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "defaultSize": {
+    "width": 400,
+    "height": 500
+  },
+  "publishMessages": [
+    {
+      "messageType": "DATA_RECORD_SET_CHANGE",
+      "messageCarryData": "USE_DATA_SOURCE"
+    }
+  ],
+  "properties": {
+    "hasSettingPage": true,
+    "canGenerateMultipleOutputDataSources": true
+  },
+  "translatedLocales": [
+    "en"
+  ]
+}

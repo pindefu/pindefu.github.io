@@ -1,0 +1,1174 @@
+{
+  "pages": {
+    "page_1": {
+      "id": "page_1",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_2"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page 2",
+      "header": false,
+      "footer": false
+    }
+  },
+  "layouts": {
+    "layout_2": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_3",
+          "bbox": {
+            "left": "48.6%",
+            "right": "-0.0%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "51.4%",
+            "height": "100.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_4",
+          "bbox": {
+            "left": "0.0%",
+            "right": "51.4%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "48.6%",
+            "height": "100.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            }
+          }
+        }
+      },
+      "order": [
+        "0",
+        "1"
+      ]
+    },
+    "layout_3": {
+      "content": {},
+      "type": "FIXED",
+      "label": "Map FixedLayout"
+    }
+  },
+  "exbVersion": "1.14.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "widgets": {
+    "widget_3": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.14.0",
+      "label": "Map 2",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true,
+          "canSelect": true,
+          "canSelectState": true
+        },
+        "isUseCustomMapState": true,
+        "initialMapDataSourceID": "dataSource_2",
+        "initialMapState": {
+          "viewPoint": {
+            "rotation": 0,
+            "scale": 73957190.948944,
+            "targetGeometry": {
+              "spatialReference": {
+                "latestWkid": 3857,
+                "wkid": 102100
+              },
+              "x": -13053684.768625384,
+              "y": 5471073.597155756
+            }
+          },
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 3857,
+              "wkid": 102100
+            },
+            "xmin": -19491517.038914356,
+            "ymin": -2356078.099244211,
+            "xmax": -6615852.498336411,
+            "ymax": 13298225.293555724
+          },
+          "rotation": 0,
+          "viewType": "2d"
+        },
+        "showPopupUponSelection": false,
+        "clientQueryDataSourceIds": [
+          "dataSource_2"
+        ]
+      },
+      "id": "widget_3",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_3"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2",
+          "mainDataSourceId": "dataSource_2"
+        }
+      ]
+    },
+    "widget_4": {
+      "uri": "widgets/search-plus/",
+      "version": "1.14.0",
+      "label": "Search Plus 2",
+      "config": {
+        "layersConfig": [
+          {
+            "id": "dataSource_2-19650e8bebe-layer-3-3",
+            "name": "states",
+            "layerId": "3",
+            "useDataSource": {
+              "dataSourceId": "dataSource_2-19650e8bebe-layer-3-3",
+              "mainDataSourceId": "dataSource_2-19650e8bebe-layer-3-3",
+              "rootDataSourceId": "dataSource_2"
+            },
+            "searchFields": [
+              {
+                "jimuName": "STATE_NAME",
+                "name": "STATE_NAME",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "STATE_NAME",
+                "format": null
+              }
+            ],
+            "groupedFields": [
+              {
+                "jimuName": "Shape_Length",
+                "name": "Shape_Length",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape_Length",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "Shape_Area",
+                "name": "Shape_Area",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape_Area",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "OBJECTID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "subDescription": ""
+              },
+              {
+                "jimuName": "STATE_FIPS",
+                "name": "STATE_FIPS",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "STATE_FIPS",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "SUB_REGION",
+                "name": "SUB_REGION",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "SUB_REGION",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "STATE_ABBR",
+                "name": "STATE_ABBR",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "STATE_ABBR",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "POP2000",
+                "name": "POP2000",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "POP2000",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "POP2007",
+                "name": "POP2007",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "POP2007",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "POP00_SQMI",
+                "name": "POP00_SQMI",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "POP00_SQMI",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "POP07_SQMI",
+                "name": "POP07_SQMI",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "POP07_SQMI",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "WHITE",
+                "name": "WHITE",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "WHITE",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "BLACK",
+                "name": "BLACK",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "BLACK",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AMERI_ES",
+                "name": "AMERI_ES",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AMERI_ES",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "ASIAN",
+                "name": "ASIAN",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "ASIAN",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "HAWN_PI",
+                "name": "HAWN_PI",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "HAWN_PI",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "OTHER",
+                "name": "OTHER",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "OTHER",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MULT_RACE",
+                "name": "MULT_RACE",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "MULT_RACE",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "HISPANIC",
+                "name": "HISPANIC",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "HISPANIC",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MALES",
+                "name": "MALES",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "MALES",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "FEMALES",
+                "name": "FEMALES",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "FEMALES",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_UNDER5",
+                "name": "AGE_UNDER5",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_UNDER5",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_5_17",
+                "name": "AGE_5_17",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_5_17",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_18_21",
+                "name": "AGE_18_21",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_18_21",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_22_29",
+                "name": "AGE_22_29",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_22_29",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_30_39",
+                "name": "AGE_30_39",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_30_39",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_40_49",
+                "name": "AGE_40_49",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_40_49",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_50_64",
+                "name": "AGE_50_64",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_50_64",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_65_UP",
+                "name": "AGE_65_UP",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_65_UP",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MED_AGE",
+                "name": "MED_AGE",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "MED_AGE",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MED_AGE_M",
+                "name": "MED_AGE_M",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "MED_AGE_M",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MED_AGE_F",
+                "name": "MED_AGE_F",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "MED_AGE_F",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "HOUSEHOLDS",
+                "name": "HOUSEHOLDS",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "HOUSEHOLDS",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AVE_HH_SZ",
+                "name": "AVE_HH_SZ",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "AVE_HH_SZ",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "HSEHLD_1_M",
+                "name": "HSEHLD_1_M",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "HSEHLD_1_M",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "HSEHLD_1_F",
+                "name": "HSEHLD_1_F",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "HSEHLD_1_F",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MARHH_CHD",
+                "name": "MARHH_CHD",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "MARHH_CHD",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MARHH_NO_C",
+                "name": "MARHH_NO_C",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "MARHH_NO_C",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MHH_CHILD",
+                "name": "MHH_CHILD",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "MHH_CHILD",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "FHH_CHILD",
+                "name": "FHH_CHILD",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "FHH_CHILD",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "FAMILIES",
+                "name": "FAMILIES",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "FAMILIES",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AVE_FAM_SZ",
+                "name": "AVE_FAM_SZ",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "AVE_FAM_SZ",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "HSE_UNITS",
+                "name": "HSE_UNITS",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "HSE_UNITS",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "VACANT",
+                "name": "VACANT",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "VACANT",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "OWNER_OCC",
+                "name": "OWNER_OCC",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "OWNER_OCC",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "RENTER_OCC",
+                "name": "RENTER_OCC",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "RENTER_OCC",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "NO_FARMS97",
+                "name": "NO_FARMS97",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "NO_FARMS97",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AVG_SIZE97",
+                "name": "AVG_SIZE97",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "AVG_SIZE97",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "CROP_ACR97",
+                "name": "CROP_ACR97",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "CROP_ACR97",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AVG_SALE97",
+                "name": "AVG_SALE97",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "AVG_SALE97",
+                "format": null,
+                "subDescription": ""
+              }
+            ],
+            "symbol": {
+              "type": "esriSFS",
+              "color": [
+                192,
+                80,
+                77,
+                255
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "color": [
+                  160,
+                  63,
+                  60,
+                  255
+                ],
+                "width": 1.5,
+                "style": "esriSLSSolid"
+              },
+              "style": "esriSFSSolid"
+            }
+          },
+          {
+            "id": "dataSource_2-19650e8bebe-layer-3-2",
+            "name": "Detailed Counties",
+            "layerId": "2",
+            "useDataSource": {
+              "dataSourceId": "dataSource_2-19650e8bebe-layer-3-2",
+              "mainDataSourceId": "dataSource_2-19650e8bebe-layer-3-2",
+              "rootDataSourceId": "dataSource_2"
+            },
+            "searchFields": [
+              {
+                "jimuName": "STATE_NAME",
+                "name": "STATE_NAME",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "STATE_NAME",
+                "format": null
+              },
+              {
+                "jimuName": "NAME",
+                "name": "NAME",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "NAME",
+                "format": null
+              }
+            ],
+            "groupedFields": [
+              {
+                "jimuName": "Shape_Length",
+                "name": "Shape_Length",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape_Length",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "Shape_Area",
+                "name": "Shape_Area",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape_Area",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "OBJECTID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "subDescription": ""
+              },
+              {
+                "jimuName": "STATE_FIPS",
+                "name": "STATE_FIPS",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "STATE_FIPS",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "CNTY_FIPS",
+                "name": "CNTY_FIPS",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "CNTY_FIPS",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "FIPS",
+                "name": "FIPS",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "FIPS",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "POP2000",
+                "name": "POP2000",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "POP2000",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "POP2007",
+                "name": "POP2007",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "POP2007",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "POP00_SQMI",
+                "name": "POP00_SQMI",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "POP00_SQMI",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "POP07_SQMI",
+                "name": "POP07_SQMI",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "POP07_SQMI",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "WHITE",
+                "name": "WHITE",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "WHITE",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "BLACK",
+                "name": "BLACK",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "BLACK",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AMERI_ES",
+                "name": "AMERI_ES",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AMERI_ES",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "ASIAN",
+                "name": "ASIAN",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "ASIAN",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "HAWN_PI",
+                "name": "HAWN_PI",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "HAWN_PI",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "OTHER",
+                "name": "OTHER",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "OTHER",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MULT_RACE",
+                "name": "MULT_RACE",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "MULT_RACE",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "HISPANIC",
+                "name": "HISPANIC",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "HISPANIC",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MALES",
+                "name": "MALES",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "MALES",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "FEMALES",
+                "name": "FEMALES",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "FEMALES",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_UNDER5",
+                "name": "AGE_UNDER5",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_UNDER5",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_5_17",
+                "name": "AGE_5_17",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_5_17",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_18_21",
+                "name": "AGE_18_21",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_18_21",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_22_29",
+                "name": "AGE_22_29",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_22_29",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_30_39",
+                "name": "AGE_30_39",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_30_39",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_40_49",
+                "name": "AGE_40_49",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_40_49",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_50_64",
+                "name": "AGE_50_64",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_50_64",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AGE_65_UP",
+                "name": "AGE_65_UP",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "AGE_65_UP",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MED_AGE",
+                "name": "MED_AGE",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "MED_AGE",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MED_AGE_M",
+                "name": "MED_AGE_M",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "MED_AGE_M",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MED_AGE_F",
+                "name": "MED_AGE_F",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "MED_AGE_F",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "HOUSEHOLDS",
+                "name": "HOUSEHOLDS",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "HOUSEHOLDS",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AVE_HH_SZ",
+                "name": "AVE_HH_SZ",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "AVE_HH_SZ",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "HSEHLD_1_M",
+                "name": "HSEHLD_1_M",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "HSEHLD_1_M",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "HSEHLD_1_F",
+                "name": "HSEHLD_1_F",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "HSEHLD_1_F",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MARHH_CHD",
+                "name": "MARHH_CHD",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "MARHH_CHD",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MARHH_NO_C",
+                "name": "MARHH_NO_C",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "MARHH_NO_C",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "MHH_CHILD",
+                "name": "MHH_CHILD",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "MHH_CHILD",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "FHH_CHILD",
+                "name": "FHH_CHILD",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "FHH_CHILD",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "FAMILIES",
+                "name": "FAMILIES",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "FAMILIES",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AVE_FAM_SZ",
+                "name": "AVE_FAM_SZ",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "AVE_FAM_SZ",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "HSE_UNITS",
+                "name": "HSE_UNITS",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "HSE_UNITS",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "VACANT",
+                "name": "VACANT",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "VACANT",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "OWNER_OCC",
+                "name": "OWNER_OCC",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "OWNER_OCC",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "RENTER_OCC",
+                "name": "RENTER_OCC",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "RENTER_OCC",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "NO_FARMS97",
+                "name": "NO_FARMS97",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "NO_FARMS97",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "AVG_SIZE97",
+                "name": "AVG_SIZE97",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "AVG_SIZE97",
+                "format": null,
+                "subDescription": ""
+              },
+              {
+                "jimuName": "CROP_ACR97",
+                "name": "CROP_ACR97",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "CROP_ACR97",
+                "format": null,
+                "subDescription": ""
+              }
+            ],
+            "symbol": {
+              "type": "esriSFS",
+              "color": [
+                224,
+                212,
+                242,
+                255
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "color": [
+                  145,
+                  122,
+                  171,
+                  255
+                ],
+                "width": 1.5,
+                "style": "esriSLSSolid"
+              },
+              "style": "esriSFSSolid"
+            }
+          }
+        ],
+        "caseSensitive": false,
+        "description": ""
+      },
+      "id": "widget_4",
+      "useMapWidgetIds": [
+        "widget_3"
+      ],
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2-19650e8bebe-layer-3-3",
+          "mainDataSourceId": "dataSource_2-19650e8bebe-layer-3-3",
+          "rootDataSourceId": "dataSource_2"
+        },
+        {
+          "dataSourceId": "dataSource_2-19650e8bebe-layer-3-2",
+          "mainDataSourceId": "dataSource_2-19650e8bebe-layer-3-2",
+          "rootDataSourceId": "dataSource_2"
+        }
+      ]
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "dataSources": {
+    "dataSource_2": {
+      "id": "dataSource_2",
+      "type": "WEB_MAP",
+      "sourceLabel": "Census map image map",
+      "itemId": "48ad3e6dfc6749b38345152259f89b6e",
+      "portalUrl": "https://www.arcgis.com"
+    }
+  },
+  "messageConfigs": {},
+  "attributes": {
+    "portalUrl": "https://peteamtest1.esri.com/portal",
+    "isWebTier": false,
+    "clientId": "",
+    "title": "test search plus",
+    "description": "",
+    "type": "Web Experience",
+    "thumbnail": null
+  },
+  "sharedThemeVariables": null,
+  "originExbVersion": "1.14.0",
+  "pageStructure": [
+    {
+      "page_1": []
+    }
+  ],
+  "timestamp": 1745115201405
+}
