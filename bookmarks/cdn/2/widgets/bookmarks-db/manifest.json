@@ -1,0 +1,26 @@
+{
+  "name": "bookmarks-db",
+  "type": "widget",
+  "version": "1.15.0",
+  "exbVersion": "1.15.0",
+  "author": "Esri R&D Center Beijing",
+  "description": "Reads bookmarks from a feature layer",
+  "copyright": "",
+  "dependency": "jimu-arcgis",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "canCrossLayoutBoundary": true,
+    "supportRepeat": true,
+    "supportAutoSize": true,
+    "watchViewportVisibility": true,
+    "canConsumeDataAction": true,
+    "overflow": "auto"
+  },
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 300,
+    "height": 400
+  }
+}
