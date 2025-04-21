@@ -88,10 +88,10 @@
         "toolConfig": {
           "canZoom": true,
           "canHome": true,
-          "canSearch": true,
+          "canSearch": false,
           "canNavigation": true,
-          "canSelect": true,
-          "canSelectState": true
+          "canSelect": false,
+          "canSelectState": false
         },
         "isUseCustomMapState": true,
         "initialMapDataSourceID": "dataSource_2",
@@ -122,9 +122,8 @@
           "viewType": "2d"
         },
         "showPopupUponSelection": false,
-        "clientQueryDataSourceIds": [
-          "dataSource_2"
-        ]
+        "clientQueryDataSourceIds": [],
+        "disablePopUp": true
       },
       "id": "widget_3",
       "layouts": {
@@ -1155,13 +1154,7 @@
   },
   "messageConfigs": {},
   "attributes": {
-    "portalUrl": "https://peteamtest1.esri.com/portal",
-    "isWebTier": false,
-    "clientId": "",
-    "title": "test search plus",
-    "description": "",
-    "type": "Web Experience",
-    "thumbnail": null
+    "portalUrl": "https://peteamtest1.esri.com/portal"
   },
   "sharedThemeVariables": null,
   "originExbVersion": "1.14.0",
@@ -1170,5 +1163,5 @@
       "page_1": []
     }
   ],
-  "timestamp": 1745115201405
+  "timestamp": 1745257851015
 }
